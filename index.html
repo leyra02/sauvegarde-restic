@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sauvegarde Restic — application personnelle</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         max-width: 46rem; margin: 3rem auto; padding: 0 1.2rem;
+         line-height: 1.6; color: #1b1b1b; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: .2rem; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  code { background: #f2f2f2; padding: .1rem .35rem; border-radius: 4px; }
+  footer { margin-top: 3rem; border-top: 1px solid #e5e5e5; padding-top: 1rem;
+           font-size: .9rem; color: #666; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+
+<h1>Sauvegarde Restic</h1>
+<p class="sub">Application personnelle d'accès Google Drive</p>
+
+<h2>À quoi sert cette application</h2>
+<p>
+  Cette application est utilisée <strong>uniquement par son propriétaire</strong>, sur son
+  propre serveur Windows, afin de sauvegarder un dossier de son disque vers
+  <strong>son propre espace Google Drive</strong>. Elle ne propose aucun service à des tiers,
+  ne comporte pas de page d'inscription et n'est pas distribuée publiquement.
+</p>
+
+<h2>Ce qu'elle fait techniquement</h2>
+<p>
+  Elle est composée de deux outils libres, <code>restic</code> (sauvegarde chiffrée et
+  dédupliquée) et <code>rclone</code> (transfert vers Google Drive). L'accès à Google Drive
+  est demandé au moyen du protocole OAuth 2.0 de Google, avec la seule permission
+  nécessaire à l'envoi et à la gestion des fichiers de sauvegarde dans le dossier de
+  l'utilisateur. Aucune donnée n'est transmise à un autre serveur que Google Drive.
+</p>
+
+<h2>Données personnelles</h2>
+<p>
+  Aucune donnée tierce n'est collectée, analysée, revendue ou transmise à un tiers.
+  Voir la <a href="privacy.html">politique de confidentialité</a>.
+</p>
+
+<footer>
+  Application privée, à usage personnel. Contact :
+  <a href="mailto:VOTRE-ADRESSE@gmail.com">VOTRE-ADRESSE@gmail.com</a>
+</footer>
+
+</body>
+</html>
